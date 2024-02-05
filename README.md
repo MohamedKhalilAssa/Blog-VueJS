@@ -1,5 +1,9 @@
 # blog
 
+This is a mock app made to practice my new-learned skills in Vue JS.\
+The Data to make cards/posts is fetched from JSONPlaceHolder.\
+thanks for your time.
+
 ## Project setup
 ```
 npm install
