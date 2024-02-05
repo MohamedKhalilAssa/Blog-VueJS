@@ -11,12 +11,12 @@ const getPosts =  () =>{
             const res = await fetch('https://jsonplaceholder.typicode.com/posts')
             
             if(!res.ok){
-              throw('could not fetch the data')
+              throw('Could not fetch the data!')
             }
             posts.value = await res.json()
             posts.value = posts.value.slice(0, 10 + count * 10 )
         } catch(err){
-            error.value = err.message
+            error.value = err
         }
 
     }

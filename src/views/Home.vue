@@ -1,8 +1,9 @@
 <template>
-  <postsList :counter="counter" />
-  <div class="wrapper">
-    <button class="btn btn-dark mb-5" @click="onLoadMore">Load More...</button>
-  </div>
+  <postsList :counter="counter">
+    <div class="wrapper">
+      <button class="btn btn-dark mt-3" @click="onLoadMore">Load More...</button>
+    </div>
+  </postsList>
 </template>
 
 <script setup>

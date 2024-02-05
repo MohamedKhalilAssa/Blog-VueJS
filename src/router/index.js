@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/Home.vue'
 import NotFound from '../views/NotFound.vue'
+import About from '../views/about.vue'
+import Contact from '../views/Contact.vue'
 import PostDetails from '../views/postsFolder/postDetails.vue'
 
 const routes = [
@@ -12,7 +14,18 @@ const routes = [
   {
     path:'/post/:id',
     name:'post',
-    component: PostDetails
+    component: PostDetails,
+    props:true
+  },
+  {
+    path:'/about',
+    name:'About',
+    component: About,
+  },
+  {
+    path:'/Contact',
+    name:'contact',
+    component: Contact,
   },
   // 404
   {

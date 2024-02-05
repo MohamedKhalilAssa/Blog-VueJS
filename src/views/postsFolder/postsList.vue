@@ -1,6 +1,6 @@
   <template>
     <div v-if="posts.length" class="container mb-5" >
-      <div  v-for="post in posts" :key = "post.id" class="row mt-4">
+      <div  v-for="post in posts" :key = "post.id" class="row mt-4 mb-4">
           <div class="card">
             <h5 class="card-header ">Post: {{ post.id }}</h5>
             <div class="card-body">
@@ -10,8 +10,10 @@
             </div>
           </div>
       </div>
+      <slot ></slot>
     </div>
-    <h1 v-else class='notice'>Loading Data...</h1>
+    <h1 v-else class='notice' :class="{error: error}">
+      {{ error ? error : 'Loading Data...'}}</h1>
   </template>
 
   <script setup>
@@ -33,5 +35,7 @@
   </script>
 
   <style>
-
+      .error{
+        color : red;
+      }
   </style>
