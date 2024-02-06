@@ -2,6 +2,7 @@
 
 This is a mock app made to practice my new-learned skills in Vue JS.\
 The Data to make cards/posts is fetched from JSONPlaceHolder.\
+You can have a look at the website from this link : blog-vue-lurzdzj7o-mohamedkhalilassa.vercel.app\
 thanks for your time.
 
 ## Project setup
